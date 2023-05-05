@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+        <nav>
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo" style="width:60px;height:50px;">
+            </a>
+            <ul>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#timetable">Time Table</a></li>
+                <li><a href="galleries.html">Galleries</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="links.html">Links</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <a href="https://www.instagram.com/citraamri9/" class="fa fa-instagram"></a>
+            <a href="#" class="btn">Logout</a> 
+        </nav>
+
+<div class="register">
+    <form action="" method="POST">
+        <h2>Register Form</h2>
+    <table>
+        <tr>
+            <td><label for="fname">First Name</label></td>
+            <td><input type="text" id="fname" name="fname" required></td>
+        </tr>
+        <tr>
+            <td><label for="fname">Last Name</label></td>
+            <td><input type="text" id="lname" name="lname" required></td>
+        </tr>
+        <tr>
+            <td><label for="fgender">Gender:</label></td>
+            <td>
+            <input type="radio" name="gender" value="Male"><label for="male">Male</label>
+            <input type="radio" name="gender" value="Female"><label for="female">Female</label>
+            <input type="radio" name="gender" value="Other"><label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="education">Educational Backround</label></td>
+            <td>
+                <div>
+                    <input type="checkbox" id="spm" name="spm">
+                    <label for="spm">SPM</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="diploma" name="diploma">
+                    <label for="diploma">Diploma</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="degree" name="degree">
+                    <label for="degree">Degree</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="master" name="master">
+                    <label for="master">Master</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="phd" name="phd">
+                    <label for="phd">PhD</label>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="address1">Address 1</label></td>
+            <td><textarea name="address1" id="faddress1" cols="30" rows="5" placeholder="your main address" required></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="address2">Address 2</label></td>
+            <td><textarea name="address2" id="faddress2" cols="30" rows="5" placeholder="your current address (optional)" required></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="state">City & State</label></td>
+            <td>
+                <select name="states" id="st">
+                <option value="select">select the state</option>
+                <option value="sarawak">Kuching, Sarawak</option>
+                <option value="kelantan">Kota Bharu, Kelantan</option>
+                <option value="pahang">Kuantan, Pahang</option>
+                <option value="perak">Ipoh, Perak</option>
+                <option value="penang">George Town, Penang</option>
+                <option value="sabah">Kota Kinabalu, Sabah</option>
+                <option value="negerisembilan">Seremban, Negeri Sembilan</option>
+                <option value="johor">Johor Bahru, Johor</option>
+                <option value="perlis">Kangar, Perlis</option>
+                <option value="selangor">Shah Alam, Selangor</option>
+                <option value="kedah">Alor Setar, Kedah</option>
+                <option value="terengganu">Kuala Terengganu, Terengganu</option>
+                <option value="malacca">Malacca City, Malacca</option>
+                <option value="kualalumpur">Kuala Lumpur</option>
+                <option value="putrajaya">Putrajaya</option>
+                <option value="labuan">Victoria, Labuan</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="fphone">Phone Number</label></td>
+            <td><input type="tel" id="fphone" name="fphone" required></td>
+        </tr>
+        <tr>
+            <td><label for="femail">Email</label></td>
+            <td><input type="email" id="femail" name="femail" required></td>
+        </tr>
+        <tr>
+            <td><label for="uname">Username</label></td>
+            <td><input type="text" id="uname" name="uname" placeholder="email or phone" required></td>
+        </tr>
+        <tr>
+            <td><label for="fpassword">Password</label></td>
+            <td><input type="password" id="fpassword" name="fpassword" minlength="8" placeholder="password" required></td>
+        </tr>
+        <tr>
+            <td><label for="confirm">Confirm Password</label></td>
+            <td><input type="confirm" id="confirm" name="confirm" minlength="8" placeholder="re-enter password" required></td>
+        </tr>
+        
+    </table>
+    <input type="reset" value="Reset" style="color: #D65A31;" />
+    <a href="index.html" style="text-decoration: none; color: gray; margin-left: 80%;">Cancel</a>
+    <button class="button button1">Register</button>
+    <h5>Already have an account? <a class="lgn" href="login.html">Login.</a></h5>
+</form>
+</div>
+</body>
+</html>
